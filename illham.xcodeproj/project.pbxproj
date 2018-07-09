@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		986E2D8E20F2707700A3E8BE /* PatientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E2D8D20F2707700A3E8BE /* PatientsCell.swift */; };
 		98C8ABE220F2507C00E5368D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8ABE120F2507C00E5368D /* AppDelegate.swift */; };
 		98C8ABE420F2507C00E5368D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8ABE320F2507C00E5368D /* ViewController.swift */; };
 		98C8ABE720F2507C00E5368D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C8ABE520F2507C00E5368D /* Main.storyboard */; };
 		98C8ABE920F2507E00E5368D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C8ABE820F2507E00E5368D /* Assets.xcassets */; };
 		98C8ABEC20F2507E00E5368D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C8ABEA20F2507E00E5368D /* LaunchScreen.storyboard */; };
+		98C8ABF420F2648600E5368D /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8ABF320F2648600E5368D /* PatientViewController.swift */; };
+		98C8ABF620F2649700E5368D /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8ABF520F2649700E5368D /* AnalysisViewController.swift */; };
+		98C8ABF820F264A400E5368D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8ABF720F264A400E5368D /* HomeViewController.swift */; };
+		98C8ABFA20F264C600E5368D /* PatientsQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8ABF920F264C600E5368D /* PatientsQuestionsViewController.swift */; };
+		98C8ABFC20F264D500E5368D /* PatientsResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8ABFB20F264D500E5368D /* PatientsResultsViewController.swift */; };
+		98C8ABFE20F264E800E5368D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8ABFD20F264E800E5368D /* LoginViewController.swift */; };
+		98C8AC0020F264F700E5368D /* PatientRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8ABFF20F264F700E5368D /* PatientRegisterViewController.swift */; };
+		98C8AC0220F2650D00E5368D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8AC0120F2650D00E5368D /* RegisterViewController.swift */; };
+		CC9F3CCE888467664FBD7309 /* Pods_illham.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E501072339693D38132BC9 /* Pods_illham.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55824B288F962E361FE65E17 /* Pods-illham.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-illham.release.xcconfig"; path = "Pods/Target Support Files/Pods-illham/Pods-illham.release.xcconfig"; sourceTree = "<group>"; };
+		63E501072339693D38132BC9 /* Pods_illham.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_illham.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		986E2D8D20F2707700A3E8BE /* PatientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsCell.swift; sourceTree = "<group>"; };
 		98C8ABDE20F2507C00E5368D /* illham.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = illham.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C8ABE120F2507C00E5368D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98C8ABE320F2507C00E5368D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,15 @@
 		98C8ABE820F2507E00E5368D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98C8ABEB20F2507E00E5368D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C8ABED20F2507E00E5368D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98C8ABF320F2648600E5368D /* PatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
+		98C8ABF520F2649700E5368D /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
+		98C8ABF720F264A400E5368D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		98C8ABF920F264C600E5368D /* PatientsQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsQuestionsViewController.swift; sourceTree = "<group>"; };
+		98C8ABFB20F264D500E5368D /* PatientsResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsResultsViewController.swift; sourceTree = "<group>"; };
+		98C8ABFD20F264E800E5368D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		98C8ABFF20F264F700E5368D /* PatientRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRegisterViewController.swift; sourceTree = "<group>"; };
+		98C8AC0120F2650D00E5368D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9EAA4719B158CC554574C5DC /* Pods-illham.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-illham.debug.xcconfig"; path = "Pods/Target Support Files/Pods-illham/Pods-illham.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9F3CCE888467664FBD7309 /* Pods_illham.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +63,8 @@
 			children = (
 				98C8ABE020F2507C00E5368D /* illham */,
 				98C8ABDF20F2507C00E5368D /* Products */,
+				FC76F3F88234262CD5317560 /* Pods */,
+				ACB367F2FD087B08481CFBD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +85,34 @@
 				98C8ABE820F2507E00E5368D /* Assets.xcassets */,
 				98C8ABEA20F2507E00E5368D /* LaunchScreen.storyboard */,
 				98C8ABED20F2507E00E5368D /* Info.plist */,
+				98C8ABF320F2648600E5368D /* PatientViewController.swift */,
+				98C8ABF520F2649700E5368D /* AnalysisViewController.swift */,
+				98C8ABF720F264A400E5368D /* HomeViewController.swift */,
+				98C8ABF920F264C600E5368D /* PatientsQuestionsViewController.swift */,
+				98C8ABFB20F264D500E5368D /* PatientsResultsViewController.swift */,
+				98C8ABFD20F264E800E5368D /* LoginViewController.swift */,
+				98C8ABFF20F264F700E5368D /* PatientRegisterViewController.swift */,
+				98C8AC0120F2650D00E5368D /* RegisterViewController.swift */,
+				986E2D8D20F2707700A3E8BE /* PatientsCell.swift */,
 			);
 			path = illham;
+			sourceTree = "<group>";
+		};
+		ACB367F2FD087B08481CFBD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63E501072339693D38132BC9 /* Pods_illham.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC76F3F88234262CD5317560 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EAA4719B158CC554574C5DC /* Pods-illham.debug.xcconfig */,
+				55824B288F962E361FE65E17 /* Pods-illham.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +122,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98C8ABF020F2507E00E5368D /* Build configuration list for PBXNativeTarget "illham" */;
 			buildPhases = (
+				DF2C0ABDEFAE7A51617E766C /* [CP] Check Pods Manifest.lock */,
 				98C8ABDA20F2507C00E5368D /* Sources */,
 				98C8ABDB20F2507C00E5368D /* Frameworks */,
 				98C8ABDC20F2507C00E5368D /* Resources */,
@@ -130,13 +182,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DF2C0ABDEFAE7A51617E766C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-illham-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		98C8ABDA20F2507C00E5368D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C8ABFA20F264C600E5368D /* PatientsQuestionsViewController.swift in Sources */,
+				98C8AC0220F2650D00E5368D /* RegisterViewController.swift in Sources */,
+				98C8ABF820F264A400E5368D /* HomeViewController.swift in Sources */,
 				98C8ABE420F2507C00E5368D /* ViewController.swift in Sources */,
 				98C8ABE220F2507C00E5368D /* AppDelegate.swift in Sources */,
+				98C8ABFE20F264E800E5368D /* LoginViewController.swift in Sources */,
+				98C8AC0020F264F700E5368D /* PatientRegisterViewController.swift in Sources */,
+				986E2D8E20F2707700A3E8BE /* PatientsCell.swift in Sources */,
+				98C8ABFC20F264D500E5368D /* PatientsResultsViewController.swift in Sources */,
+				98C8ABF620F2649700E5368D /* AnalysisViewController.swift in Sources */,
+				98C8ABF420F2648600E5368D /* PatientViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +360,7 @@
 		};
 		98C8ABF120F2507E00E5368D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EAA4719B158CC554574C5DC /* Pods-illham.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +379,7 @@
 		};
 		98C8ABF220F2507E00E5368D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55824B288F962E361FE65E17 /* Pods-illham.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
