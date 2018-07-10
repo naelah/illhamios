@@ -10,6 +10,10 @@ import UIKit
 
 class PatientsCell: UITableViewCell {
 
+    @IBAction func patientProfile(_ sender: Any) {
+    }
+    @IBOutlet weak var patientNewEval: UIButton!
+    @IBOutlet weak var patientName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

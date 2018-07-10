@@ -8,7 +8,8 @@
 
 import UIKit
 
-class PatientsResultsViewController: UIViewController {
+
+class PatientsResultsViewController: UIViewController, ResultDelegate{
     
     var total: Int = 0
     
@@ -20,10 +21,9 @@ class PatientsResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(resultValue.text)
         
-        resultValue.text = "\(self.total)"
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,15 +31,18 @@ class PatientsResultsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    func setResults(result: Int){
+        resultValue.text = "\(result)"
+        print(result)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "resultSegue" {
+            let vc : PatientsQuestionsViewController = segue.destination as! PatientsQuestionsViewController
+            vc.delegate = self
+        }
     }
-    */
 
 }

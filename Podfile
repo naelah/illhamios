@@ -7,4 +7,9 @@ target 'illham' do
 
   # Pods for illham
 
+  pod 'Material', '~> 2.16'
+  pod 'Motion', '~> 1.4'
+  pod 'Algorithm', '~> 2.1'
+  pod 'Graph', '~> 2.2'
+
 end

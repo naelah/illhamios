@@ -8,8 +8,13 @@
 
 import UIKit
 
-class PatientsQuestionsViewController: UIViewController {
+protocol ResultDelegate {
+    func setResults(result: Int)
+}
+
+class PatientsQuestionsViewController: UIViewController{
     
+    var delegate: ResultDelegate?
     var questions: [String] = []
     var answers: [Int] = []
     var category: [String] = []
@@ -135,6 +140,8 @@ class PatientsQuestionsViewController: UIViewController {
         
         total = (mtotal/mcount) + (stotal/scount) + (htotal/hcount) + (ptotal/pcount) + (ltotal/lcount)
         
+        delegate?.setResults(result: total)
+        
         print("Total: \(total)")
     }
     
@@ -191,15 +198,11 @@ class PatientsQuestionsViewController: UIViewController {
         
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let destination = segue.destination as? PatientsResultsViewController {
+//            destination.delegate = self
+//        }
+//    }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

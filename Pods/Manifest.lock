@@ -1,3 +1,33 @@
-PODFILE CHECKSUM: c4773f99ac16c97e4273b5a119989a041d7b65d0
+PODS:
+  - Algorithm (2.1.1)
+  - Graph (2.2.1)
+  - Material (2.16.1):
+    - Material/Core (= 2.16.1)
+  - Material/Core (2.16.1):
+    - Motion (~> 1.4.2)
+  - Motion (1.4.2):
+    - Motion/Core (= 1.4.2)
+  - Motion/Core (1.4.2)
+
+DEPENDENCIES:
+  - Algorithm (~> 2.1)
+  - Graph (~> 2.2)
+  - Material (~> 2.16)
+  - Motion (~> 1.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Algorithm
+    - Graph
+    - Material
+    - Motion
+
+SPEC CHECKSUMS:
+  Algorithm: 0fe78be3f31f85e857089685477862bcf20393b8
+  Graph: 0997ba1201c431d2761c699e1d97c3b6c675f95b
+  Material: d185e76761ad1bad80d2212e2ea4d84470087691
+  Motion: 93605fd4dffe44203b56949eb0bc73a9521af7b6
+
+PODFILE CHECKSUM: 3e353b0180d5d9db9013fbed19f4dc2187b434b4
 
 COCOAPODS: 1.5.3

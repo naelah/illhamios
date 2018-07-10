@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		986E2D8E20F2707700A3E8BE /* PatientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E2D8D20F2707700A3E8BE /* PatientsCell.swift */; };
+		986E2D9120F45A5700A3E8BE /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E2D9020F45A5700A3E8BE /* HomeCell.swift */; };
 		98C8ABE220F2507C00E5368D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8ABE120F2507C00E5368D /* AppDelegate.swift */; };
 		98C8ABE420F2507C00E5368D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8ABE320F2507C00E5368D /* ViewController.swift */; };
 		98C8ABE720F2507C00E5368D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C8ABE520F2507C00E5368D /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		55824B288F962E361FE65E17 /* Pods-illham.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-illham.release.xcconfig"; path = "Pods/Target Support Files/Pods-illham/Pods-illham.release.xcconfig"; sourceTree = "<group>"; };
 		63E501072339693D38132BC9 /* Pods_illham.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_illham.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		986E2D8D20F2707700A3E8BE /* PatientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsCell.swift; sourceTree = "<group>"; };
+		986E2D9020F45A5700A3E8BE /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		98C8ABDE20F2507C00E5368D /* illham.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = illham.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C8ABE120F2507C00E5368D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98C8ABE320F2507C00E5368D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				98C8ABFF20F264F700E5368D /* PatientRegisterViewController.swift */,
 				98C8AC0120F2650D00E5368D /* RegisterViewController.swift */,
 				986E2D8D20F2707700A3E8BE /* PatientsCell.swift */,
+				986E2D9020F45A5700A3E8BE /* HomeCell.swift */,
 			);
 			path = illham;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 				98C8ABDA20F2507C00E5368D /* Sources */,
 				98C8ABDB20F2507C00E5368D /* Frameworks */,
 				98C8ABDC20F2507C00E5368D /* Resources */,
+				6603D788B0DA8337E4AD4349 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +187,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6603D788B0DA8337E4AD4349 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-illham/Pods-illham-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Algorithm/Algorithm.framework",
+				"${BUILT_PRODUCTS_DIR}/Graph/Graph.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Algorithm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Graph.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-illham/Pods-illham-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DF2C0ABDEFAE7A51617E766C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +246,7 @@
 				986E2D8E20F2707700A3E8BE /* PatientsCell.swift in Sources */,
 				98C8ABFC20F264D500E5368D /* PatientsResultsViewController.swift in Sources */,
 				98C8ABF620F2649700E5368D /* AnalysisViewController.swift in Sources */,
+				986E2D9120F45A5700A3E8BE /* HomeCell.swift in Sources */,
 				98C8ABF420F2648600E5368D /* PatientViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

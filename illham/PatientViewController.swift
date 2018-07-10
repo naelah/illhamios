@@ -9,14 +9,18 @@
 import UIKit
 
 class PatientViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellPatient")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellPatient") as! PatientsCell
         
-        return cell!
+        cell.patientName.text = "Fulan bin Fulan"
+        
+        return cell
     }
     
 
