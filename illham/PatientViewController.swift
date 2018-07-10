@@ -10,13 +10,18 @@ import UIKit
 
 class PatientViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var patientTable: UITableView!
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellPatient") as! PatientsCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "patientCell") as! PatientsCell
         
         cell.patientName.text = "Fulan bin Fulan"
         
@@ -27,7 +32,8 @@ class PatientViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        patientTable.delegate = self
+        patientTable.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {

@@ -12,7 +12,9 @@ class PatientsCell: UITableViewCell {
 
     @IBAction func patientProfile(_ sender: Any) {
     }
-    @IBOutlet weak var patientNewEval: UIButton!
+
+    @IBAction func patientNewEval(_ sender: Any) {
+    }
     @IBOutlet weak var patientName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
