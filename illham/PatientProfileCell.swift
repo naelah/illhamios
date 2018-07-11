@@ -1,17 +1,16 @@
 //
-//  HomeCell.swift
+//  PatientProfileCell.swift
 //  illham
 //
-//  Created by Naelah on 10/07/2018.
+//  Created by Naelah on 11/07/2018.
 //  Copyright © 2018 Ideate. All rights reserved.
 //
 
 import UIKit
 
-class HomeCell: UITableViewCell {
+class PatientProfileCell: UITableViewCell {
 
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var notificationLabel: UILabel!
+    @IBOutlet weak var date: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

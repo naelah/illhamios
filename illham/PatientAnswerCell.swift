@@ -1,17 +1,17 @@
 //
-//  HomeCell.swift
+//  PatientAnswerCell.swift
 //  illham
 //
-//  Created by Naelah on 10/07/2018.
+//  Created by Naelah on 11/07/2018.
 //  Copyright © 2018 Ideate. All rights reserved.
 //
 
 import UIKit
 
-class HomeCell: UITableViewCell {
-
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var notificationLabel: UILabel!
+class PatientAnswerCell: UITableViewCell {
+    @IBOutlet weak var question: UILabel!
+    @IBOutlet weak var ans: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

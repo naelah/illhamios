@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol ResultDelegate {
+protocol ResultDelegate: class{
     func setResults(result: Int)
 }
 
 class PatientsQuestionsViewController: UIViewController{
     
-    var delegate: ResultDelegate?
+    weak var delegate: ResultDelegate?
     var questions: [String] = []
     var answers: [Int] = []
     var category: [String] = []
@@ -31,11 +31,18 @@ class PatientsQuestionsViewController: UIViewController{
     var htotal: Int = 0
     var ptotal: Int = 0
     
+    @IBAction func savebtn(_ sender: Any) {
+    }
+    @IBOutlet weak var sdbtn: UIButton!
+    @IBOutlet weak var dbtn: UIButton!
+    @IBOutlet weak var nbtn: UIButton!
+    @IBOutlet weak var abtn: UIButton!
+    @IBOutlet weak var sabtn: UIButton!
+    @IBOutlet weak var submitbtn: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBAction func a1(_ sender: Any) {
         recordMark(1)
-        
     }
     @IBAction func a2(_ sender: Any) {
         recordMark(2)
@@ -60,29 +67,24 @@ class PatientsQuestionsViewController: UIViewController{
 //        vc.total = self.total
 //        navigationController?.pushViewController(vc!, animated: true)
         
-        
+        delegate?.setResults(result: total)
         //user delegates
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         setQuestion()
-        
+        loadQuestion()
+        submitbtn.isHidden = true
         flag = 0
-        questionLabel.text = questions[0]
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func loadQuestion(){
-        
         questionLabel.text = questions[0]
-    
     }
     
     func nextQuestion(_ id: Int) -> Void {
@@ -103,6 +105,16 @@ class PatientsQuestionsViewController: UIViewController{
         }
     }
     
+    func hideButton(){
+        sdbtn.isHidden = true
+        dbtn.isHidden = true
+        nbtn.isHidden = true
+        abtn.isHidden = true
+        sabtn.isHidden = true
+        questionLabel.isHidden = true
+        submitbtn.isHidden = false
+        
+    }
     func calcTotal(){
         for i in 0 ..< questions.count - 1 {
             
@@ -141,66 +153,95 @@ class PatientsQuestionsViewController: UIViewController{
         total = (mtotal/mcount) + (stotal/scount) + (htotal/hcount) + (ptotal/pcount) + (ltotal/lcount)
         
         delegate?.setResults(result: total)
-        
+        hideButton()
         print("Total: \(total)")
     }
     
     func setQuestion(){
         
         //Category - MM (Mood Modification), S (Salience), LoC (Loss of Control), H (Harm), P (Physical)
-
         // Mood Modification
-        questions.append("Do you avoid negative temper or feelings by playing games?")
+        questions.append("1. Do you avoid negative temper or feelings by playing games?")
         category.append("MM")
         
-        questions.append("Do you play games to escape from your sorrows or get relief from bad feelings you might have?")
+        questions.append("2. Do you play games to escape from your sorrows or get relief from bad feelings you might have?")
         category.append("MM")
         
-        questions.append("Do you play games to forget about whatever’s bothering you?")
+        questions.append("3. Do you play games to forget about whatever’s bothering you?")
         category.append("MM")
         
-
         // Salience
         
-        questions.append("Do you usually think about your next gaming session when you are not playing?")
+        questions.append("4. Do you usually think about your next gaming session when you are not playing?")
         category.append("S")
         
-        questions.append("Do you often lose sleep because of playing games?")
+        questions.append("5. Do you often lose sleep because of playing games?")
         category.append("S")
         
-        questions.append("Do you think that gaming has become the most time consuming activity in your life?")
+        questions.append("6. Do you think that gaming has become the most time consuming activity in your life?")
         category.append("S")
         
-        questions.append("Have others unsuccessfully tried to reduce your time spent on games?")
+        questions.append("7. Have others unsuccessfully tried to reduce your time spent on games?")
         category.append("S")
         
         // Loss of Control
         
-        questions.append("Did you try to stay of online but was not able to?")
+        questions.append("8. Did you try to stay of online but was not able to?")
         category.append("LoC")
         
-        questions.append("Do you recognize feeling detached from time when being online?")
+        questions.append("9. Do you recognize feeling detached from time when being online?")
         category.append("LoC")
         
-        questions.append("Do you lose interest in other hobbies because of your gaming?")
+        questions.append("10. Do you lose interest in other hobbies because of your gaming?")
         category.append("LoC")
+        
         
         // Harm
         
-        // questions.append("")
-        // category.append("")
+        questions.append("11. Did you catch yourself yelling at someone who told you that you were online too often or too long?")
+        category.append("H")
+        
+        questions.append("12. Did your engagement in school / job lost in quality or productivity?")
+        category.append("H")
+        
+        questions.append("13. Did you start to retract from important social contacts or family members since you started playing games?")
+        category.append("H")
+        
+        questions.append("14. Have you had arguments with others (e.g. family, friends) over your time spent on games?")
+        category.append("H")
         
         // Physical
         
-        // questions.append("")
-        // category.append("")
+        questions.append("15. Did you gain weight consistently after playing games due to continues eating while playing games?")
+        category.append("P")
         
+        questions.append("16. Do you experience any difficulties to stand longer and prefer to sit at one place and continue playing games?")
+        category.append("P")
         
+        questions.append("17. Did you experience back ache or muscle pain due to prolonged usage of keyboards?")
+        category.append("P")
+        
+        questions.append("18. Do you have eye sight problems?")
+        category.append("P")
+        
+        questions.append("19. Do you have any difficulties in hearing?")
+        category.append("P")
+        
+        questions.append("20. Do you recognise yourself having lesser physical activity compared to before you started playing games?")
+        category.append("P")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "resultSegue" {
+            let vc = segue.destination as! PatientsResultsViewController
+            vc.total = 56
+            vc.delegate = self as? ResultDelegate
+        }
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        if let destination = segue.destination as? PatientsResultsViewController {
-//            destination.delegate = self
+//            destination.delegate = self as! ResultDelegate
 //        }
 //    }
 

@@ -8,28 +8,45 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
+    @IBOutlet weak var userProfile: UIImageView!
+    @IBOutlet weak var userInfo: UILabel!
+    @IBOutlet weak var homeTable: UITableView!
+    
+    
+    var notifications: [String] = ["added 3 patients", "added 6 patients", "added 2 patients", "added 10 patients"]
+    var notificationDates: [String] = ["Today", "Yesterday", "July 10", "July 11"]
 
+
+    @IBOutlet weak var userLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.userInfo.text = "Dr. Khadijah Fatimah\n Department of Psychology"
+        homeTable.delegate = self
+        homeTable.dataSource = self
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return notifications.count
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell") as? HomeCell
+        
+        cell?.dateLabel.text = notificationDates[indexPath.row]
+        cell?.notificationLabel.text = notifications[indexPath.row]
+        
+        return cell!
+    }
+    
+    
+
 
 }
