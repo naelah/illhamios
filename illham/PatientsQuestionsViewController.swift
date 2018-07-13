@@ -234,7 +234,7 @@ class PatientsQuestionsViewController: UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "resultSegue" {
             let vc = segue.destination as! PatientsResultsViewController
-            vc.total = 56
+            vc.total = self.total
             vc.delegate = self as? ResultDelegate
         }
     }
