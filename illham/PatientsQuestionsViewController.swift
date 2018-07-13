@@ -151,7 +151,7 @@ class PatientsQuestionsViewController: UIViewController{
         if hcount == 0 { hcount = 1}
         
         total = (mtotal/mcount) + (stotal/scount) + (htotal/hcount) + (ptotal/pcount) + (ltotal/lcount)
-        
+        total = (total/25)*100
         delegate?.setResults(result: total)
         hideButton()
         print("Total: \(total)")
