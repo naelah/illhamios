@@ -240,21 +240,21 @@ Agree</string>
         <scene sceneID="fIe-JQ-vQU">
             <objects>
                 <viewController id="i7Y-pj-xi8" customClass="PatientsResultsViewController" customModule="illham" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="JOk-Sv-Ds9">
+                    <view key="view" contentMode="scaleToFill" id="JOk-Sv-Ds9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3WM-ZN-XzF">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3WM-ZN-XzF">
                                 <rect key="frame" x="0.0" y="64" width="375" height="1000"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="80%" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dT-Vz-QaO">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80%" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dT-Vz-QaO">
                                         <rect key="frame" x="134.5" y="8" width="107.5" height="60"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Addiction level" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsj-Ax-Kmh">
-                                        <rect key="frame" x="132" y="76" width="112" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Addiction level" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsj-Ax-Kmh">
+                                        <rect key="frame" x="130.5" y="76" width="115" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="WKg-b6-Fmq"/>
                                         </constraints>
@@ -262,37 +262,34 @@ Agree</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="loreum ipsum results thingy" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLs-9D-wa3">
-                                        <rect key="frame" x="93" y="122" width="189.5" height="777"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="500" id="g6Y-sY-92x"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loreum ipsum results thingy" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLs-9D-wa3">
+                                        <rect key="frame" x="10" y="122" width="356.5" height="72"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Qsj-Ax-Kmh" secondAttribute="trailing" constant="131" id="53d-ew-T2b"/>
+                                    <constraint firstItem="2dT-Vz-QaO" firstAttribute="top" secondItem="3WM-ZN-XzF" secondAttribute="topMargin" id="8Ls-7v-X5p"/>
                                     <constraint firstItem="Qsj-Ax-Kmh" firstAttribute="top" secondItem="2dT-Vz-QaO" secondAttribute="bottom" constant="8" symbolic="YES" id="MyA-mu-2PN"/>
-                                    <constraint firstAttribute="height" constant="1000" id="Nbw-kg-xgw"/>
-                                    <constraint firstItem="lLs-9D-wa3" firstAttribute="top" secondItem="Qsj-Ax-Kmh" secondAttribute="bottom" constant="25" id="TZq-9E-Es5"/>
-                                    <constraint firstAttribute="trailing" secondItem="lLs-9D-wa3" secondAttribute="trailing" constant="10" id="dOR-mt-dBi"/>
-                                    <constraint firstItem="lLs-9D-wa3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3WM-ZN-XzF" secondAttribute="leading" constant="10" id="kxj-1d-skq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qsj-Ax-Kmh" secondAttribute="bottom" constant="903" id="P7u-hl-adt"/>
+                                    <constraint firstItem="2dT-Vz-QaO" firstAttribute="centerX" secondItem="lLs-9D-wa3" secondAttribute="centerX" id="Pw7-Pw-Ofm"/>
+                                    <constraint firstItem="lLs-9D-wa3" firstAttribute="top" secondItem="Qsj-Ax-Kmh" secondAttribute="bottom" constant="25" id="cy0-We-I6S"/>
+                                    <constraint firstItem="lLs-9D-wa3" firstAttribute="leading" secondItem="3WM-ZN-XzF" secondAttribute="leading" constant="10" id="d5N-gv-fS6"/>
+                                    <constraint firstItem="Qsj-Ax-Kmh" firstAttribute="centerX" secondItem="3WM-ZN-XzF" secondAttribute="centerX" id="gHn-0P-Yf8"/>
+                                    <constraint firstAttribute="trailing" secondItem="lLs-9D-wa3" secondAttribute="trailing" constant="10" id="nIE-Fe-xGn"/>
                                     <constraint firstItem="Qsj-Ax-Kmh" firstAttribute="centerX" secondItem="2dT-Vz-QaO" secondAttribute="centerX" id="q5d-Nu-E25"/>
-                                    <constraint firstItem="lLs-9D-wa3" firstAttribute="centerX" secondItem="3WM-ZN-XzF" secondAttribute="centerX" id="sH7-37-1nz"/>
-                                    <constraint firstAttribute="bottom" secondItem="lLs-9D-wa3" secondAttribute="bottom" id="tDi-ia-QqO"/>
-                                    <constraint firstItem="2dT-Vz-QaO" firstAttribute="top" secondItem="3WM-ZN-XzF" secondAttribute="topMargin" id="vqk-T2-X1u"/>
-                                    <constraint firstItem="Qsj-Ax-Kmh" firstAttribute="centerX" secondItem="3WM-ZN-XzF" secondAttribute="centerX" id="x5D-6j-Qjm"/>
+                                    <constraint firstItem="lLs-9D-wa3" firstAttribute="top" secondItem="Qsj-Ax-Kmh" secondAttribute="bottom" constant="25" id="w3e-h1-lL5"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3WM-ZN-XzF" firstAttribute="top" secondItem="dkn-W2-17n" secondAttribute="top" id="7Vz-GH-qpG"/>
-                            <constraint firstAttribute="bottom" secondItem="3WM-ZN-XzF" secondAttribute="bottom" constant="-64" id="9Z7-ah-7gT"/>
-                            <constraint firstAttribute="bottom" secondItem="3WM-ZN-XzF" secondAttribute="bottom" id="KHr-iu-GJz"/>
-                            <constraint firstItem="3WM-ZN-XzF" firstAttribute="trailing" secondItem="dkn-W2-17n" secondAttribute="trailing" id="s20-Im-sYS"/>
-                            <constraint firstItem="3WM-ZN-XzF" firstAttribute="leading" secondItem="dkn-W2-17n" secondAttribute="leading" id="ucN-bv-YsY"/>
+                            <constraint firstItem="3WM-ZN-XzF" firstAttribute="leading" secondItem="JOk-Sv-Ds9" secondAttribute="leading" id="7cL-SU-R0C"/>
+                            <constraint firstItem="3WM-ZN-XzF" firstAttribute="top" secondItem="dkn-W2-17n" secondAttribute="top" id="PcD-BL-gfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="3WM-ZN-XzF" secondAttribute="trailing" id="V1f-Mh-a2b"/>
+                            <constraint firstAttribute="bottom" secondItem="3WM-ZN-XzF" secondAttribute="bottom" constant="-64" id="lK4-lN-B3M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dkn-W2-17n"/>
                     </view>
