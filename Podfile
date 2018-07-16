@@ -11,5 +11,6 @@ target 'illham' do
   pod 'Motion', '~> 1.4'
   pod 'Algorithm', '~> 2.1'
   pod 'Graph', '~> 2.2'
+  pod 'SCLAlertView'
 
 end

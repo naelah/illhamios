@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SCLAlertView
 
 protocol ResultDelegate: class{
     func setResults(result: Int)
@@ -20,6 +21,7 @@ class PatientsQuestionsViewController: UIViewController{
     var category: [String] = []
     var total: Int = 0
     var flag: Int = 0
+    var percenttotal: Float = 0.0
     var mcount: Int = 0
     var scount: Int = 0
     var lcount: Int = 0
@@ -30,6 +32,7 @@ class PatientsQuestionsViewController: UIViewController{
     var ltotal: Int = 0
     var htotal: Int = 0
     var ptotal: Int = 0
+   
     
     @IBAction func savebtn(_ sender: Any) {
     }
@@ -59,20 +62,13 @@ class PatientsQuestionsViewController: UIViewController{
     
     @IBAction func submit(_ sender: Any) {
         
-//        var viewControllerStoryboardId = "PatientsResultsViewController"
-//        var storyboardName = "Main"
-//        var storyboard = UIStoryboard(name: storyboardName, bundle: Bundle.main)
-//        let vc = storyboard.instantiateViewController(withIdentifier: viewControllerStoryboardId) as UIViewController?
-//        //vc.total = "100" //"\(self.total)"
-//        vc.total = self.total
-//        navigationController?.pushViewController(vc!, animated: true)
-        
         delegate?.setResults(result: total)
         //user delegates
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        resetVal()
         setQuestion()
         loadQuestion()
         submitbtn.isHidden = true
@@ -103,6 +99,25 @@ class PatientsQuestionsViewController: UIViewController{
         print("question: ", questions.count)
         print("flag:", flag)
         }
+    }
+    func resetVal(){
+        
+    questions = []
+    answers = []
+    category = []
+    total = 0
+    flag = 0
+    mcount = 0
+    scount = 0
+    lcount = 0
+    hcount = 0
+    pcount = 0
+    mtotal  = 0
+    stotal  = 0
+    ltotal = 0
+    htotal = 0
+    ptotal = 0
+    
     }
     
     func hideButton(){
@@ -151,10 +166,16 @@ class PatientsQuestionsViewController: UIViewController{
         if hcount == 0 { hcount = 1}
         
         total = (mtotal/mcount) + (stotal/scount) + (htotal/hcount) + (ptotal/pcount) + (ltotal/lcount)
-        total = (total/25)*100
+        print("Total: \(total)")
+        percenttotal = (Float(total)/25)*100
         delegate?.setResults(result: total)
         hideButton()
-        print("Total: \(total)")
+        let alert: SCLAlertViewResponder = SCLAlertView().showSuccess("79%", subTitle: "Addiction level")
+        let alertv =  SCLAlertView()
+        alert.setTitle("\(percenttotal)%") // Rename title
+        alert.setSubTitle("View more about your addiction level") // Rename subtitle
+        alertv.addButton("View More", target:self, selector:#selector(getter: PatientsQuestionsViewController.submitbtn))
+        print("Total: \(percenttotal)")
     }
     
     func setQuestion(){
@@ -234,7 +255,7 @@ class PatientsQuestionsViewController: UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "resultSegue" {
             let vc = segue.destination as! PatientsResultsViewController
-            vc.total = self.total
+            vc.total = Int(self.percenttotal)
             vc.delegate = self as? ResultDelegate
         }
     }

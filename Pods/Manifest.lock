@@ -1,19 +1,21 @@
 PODS:
   - Algorithm (2.1.1)
-  - Graph (2.2.1)
-  - Material (2.16.1):
-    - Material/Core (= 2.16.1)
-  - Material/Core (2.16.1):
+  - Graph (2.2.2)
+  - Material (2.16.2):
+    - Material/Core (= 2.16.2)
+  - Material/Core (2.16.2):
     - Motion (~> 1.4.2)
   - Motion (1.4.2):
     - Motion/Core (= 1.4.2)
   - Motion/Core (1.4.2)
+  - SCLAlertView (0.8)
 
 DEPENDENCIES:
   - Algorithm (~> 2.1)
   - Graph (~> 2.2)
   - Material (~> 2.16)
   - Motion (~> 1.4)
+  - SCLAlertView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -21,13 +23,15 @@ SPEC REPOS:
     - Graph
     - Material
     - Motion
+    - SCLAlertView
 
 SPEC CHECKSUMS:
   Algorithm: 0fe78be3f31f85e857089685477862bcf20393b8
-  Graph: 0997ba1201c431d2761c699e1d97c3b6c675f95b
-  Material: d185e76761ad1bad80d2212e2ea4d84470087691
+  Graph: 7bb540efc73635f727126db6236598aa472be086
+  Material: e8cceb3577ae4ee3811ec033a34ab4a3dc8c084c
   Motion: 93605fd4dffe44203b56949eb0bc73a9521af7b6
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
 
-PODFILE CHECKSUM: 3e353b0180d5d9db9013fbed19f4dc2187b434b4
+PODFILE CHECKSUM: c376144650878a1821575f02709f4e72332f991e
 
 COCOAPODS: 1.5.3
