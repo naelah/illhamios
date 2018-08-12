@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980AEF5121208F14008149EA /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AEF5021208F14008149EA /* Patient.swift */; };
+		980AEF5321208FD2008149EA /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AEF5221208FD2008149EA /* Doctor.swift */; };
+		980AEF5521208FE5008149EA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AEF5421208FE5008149EA /* Data.swift */; };
+		980AEF5721208FF1008149EA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AEF5621208FF1008149EA /* Result.swift */; };
+		980AEF5921209004008149EA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AEF5821209004008149EA /* Question.swift */; };
+		980AEF5B2120900F008149EA /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AEF5A2120900F008149EA /* Answer.swift */; };
 		9846D5B220F5043B004702BF /* PatientAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9846D5B120F5043A004702BF /* PatientAnswerCell.swift */; };
 		9846D5B420F50460004702BF /* PatientProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9846D5B320F50460004702BF /* PatientProfileCell.swift */; };
 		9846D5B620F50982004702BF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9846D5B520F50982004702BF /* libsqlite3.tbd */; };
@@ -34,6 +40,12 @@
 /* Begin PBXFileReference section */
 		55824B288F962E361FE65E17 /* Pods-illham.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-illham.release.xcconfig"; path = "Pods/Target Support Files/Pods-illham/Pods-illham.release.xcconfig"; sourceTree = "<group>"; };
 		63E501072339693D38132BC9 /* Pods_illham.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_illham.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		980AEF5021208F14008149EA /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		980AEF5221208FD2008149EA /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		980AEF5421208FE5008149EA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		980AEF5621208FF1008149EA /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		980AEF5821209004008149EA /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		980AEF5A2120900F008149EA /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		9846D5B120F5043A004702BF /* PatientAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAnswerCell.swift; sourceTree = "<group>"; };
 		9846D5B320F50460004702BF /* PatientProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileCell.swift; sourceTree = "<group>"; };
 		9846D5B520F50982004702BF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -115,6 +127,12 @@
 				9846D5B120F5043A004702BF /* PatientAnswerCell.swift */,
 				9846D5B720F59D08004702BF /* PatientsProfileViewController.swift */,
 				9846D5B920F59D16004702BF /* PatientsAnswerViewController.swift */,
+				980AEF5021208F14008149EA /* Patient.swift */,
+				980AEF5221208FD2008149EA /* Doctor.swift */,
+				980AEF5421208FE5008149EA /* Data.swift */,
+				980AEF5621208FF1008149EA /* Result.swift */,
+				980AEF5821209004008149EA /* Question.swift */,
+				980AEF5A2120900F008149EA /* Answer.swift */,
 			);
 			path = illham;
 			sourceTree = "<group>";
@@ -215,6 +233,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-illham/Pods-illham-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Algorithm/Algorithm.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Graph/Graph.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
@@ -223,6 +242,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Algorithm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Graph.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
@@ -262,16 +282,22 @@
 				9846D5B820F59D08004702BF /* PatientsProfileViewController.swift in Sources */,
 				98C8AC0220F2650D00E5368D /* RegisterViewController.swift in Sources */,
 				98C8ABF820F264A400E5368D /* HomeViewController.swift in Sources */,
+				980AEF5121208F14008149EA /* Patient.swift in Sources */,
+				980AEF5B2120900F008149EA /* Answer.swift in Sources */,
 				9846D5BA20F59D16004702BF /* PatientsAnswerViewController.swift in Sources */,
+				980AEF5721208FF1008149EA /* Result.swift in Sources */,
 				9846D5B420F50460004702BF /* PatientProfileCell.swift in Sources */,
 				98C8ABE420F2507C00E5368D /* ViewController.swift in Sources */,
 				9846D5B220F5043B004702BF /* PatientAnswerCell.swift in Sources */,
 				98C8ABE220F2507C00E5368D /* AppDelegate.swift in Sources */,
 				98C8ABFE20F264E800E5368D /* LoginViewController.swift in Sources */,
+				980AEF5921209004008149EA /* Question.swift in Sources */,
 				98C8AC0020F264F700E5368D /* PatientRegisterViewController.swift in Sources */,
 				986E2D8E20F2707700A3E8BE /* PatientsCell.swift in Sources */,
 				98C8ABFC20F264D500E5368D /* PatientsResultsViewController.swift in Sources */,
+				980AEF5321208FD2008149EA /* Doctor.swift in Sources */,
 				98C8ABF620F2649700E5368D /* AnalysisViewController.swift in Sources */,
+				980AEF5521208FE5008149EA /* Data.swift in Sources */,
 				986E2D9120F45A5700A3E8BE /* HomeCell.swift in Sources */,
 				98C8ABF420F2648600E5368D /* PatientViewController.swift in Sources */,
 			);

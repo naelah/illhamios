@@ -352,10 +352,10 @@ Agree</string>
             </objects>
             <point key="canvasLocation" x="4317.6000000000004" y="1245.4272863568217"/>
         </scene>
-        <!--View Controller-->
+        <!--Patients Register-->
         <scene sceneID="lfY-OG-im6">
             <objects>
-                <viewController id="BO0-XK-hvT" sceneMemberID="viewController">
+                <viewController title="Patients Register" id="BO0-XK-hvT" customClass="PatientRegisterViewController" customModule="illham" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Soq-je-pZg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -365,6 +365,9 @@ Agree</string>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="name:" destination="26J-hE-D78" eventType="editingDidEnd" id="bFA-MN-50q"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4G-Jd-dPU">
                                 <rect key="frame" x="73" y="269" width="67" height="30"/>
@@ -396,6 +399,7 @@ Agree</string>
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="submitbutton:" destination="BO0-XK-hvT" eventType="touchUpInside" id="9Ep-Jj-WTa"/>
                                     <segue destination="y2K-lt-IGE" kind="show" id="c62-wD-lgB"/>
                                 </connections>
                             </button>
@@ -425,8 +429,15 @@ Agree</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7mU-JB-7TO"/>
                     </view>
+                    <connections>
+                        <outlet property="agefield" destination="lqo-GU-r1d" id="hq2-I4-6uP"/>
+                        <outlet property="genderfield" destination="d4G-Jd-dPU" id="Fsj-sr-W9G"/>
+                        <outlet property="icfield" destination="sAe-Lb-9D9" id="w5V-so-hl4"/>
+                        <outlet property="namefield" destination="qeE-Ss-GbI" id="gbj-ez-PnQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4SQ-l1-fvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="26J-hE-D78" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2220" y="1244.527736131934"/>
         </scene>
@@ -926,7 +937,7 @@ Agree</string>
         <image name="ic_image_white" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hGI-Ec-y44"/>
+        <segue reference="c62-wD-lgB"/>
         <segue reference="76W-u7-BTL"/>
     </inferredMetricsTieBreakers>
 </document>

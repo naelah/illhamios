@@ -91,7 +91,7 @@ class PatientsQuestionsViewController: UIViewController{
         answers.append(id)
         flag = flag + 1
         
-        if questions.count - 1 <= flag{
+        if questions.count <= flag{
             calcTotal()
         } else{
         

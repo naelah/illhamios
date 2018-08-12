@@ -1,5 +1,8 @@
 PODS:
   - Algorithm (2.1.1)
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
   - Graph (2.2.2)
   - Material (2.16.2):
     - Material/Core (= 2.16.2)
@@ -12,6 +15,7 @@ PODS:
 
 DEPENDENCIES:
   - Algorithm (~> 2.1)
+  - Charts (~> 3.1)
   - Graph (~> 2.2)
   - Material (~> 2.16)
   - Motion (~> 1.4)
@@ -20,6 +24,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Algorithm
+    - Charts
     - Graph
     - Material
     - Motion
@@ -27,11 +32,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Algorithm: 0fe78be3f31f85e857089685477862bcf20393b8
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   Graph: 7bb540efc73635f727126db6236598aa472be086
   Material: e8cceb3577ae4ee3811ec033a34ab4a3dc8c084c
   Motion: 93605fd4dffe44203b56949eb0bc73a9521af7b6
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
 
-PODFILE CHECKSUM: c376144650878a1821575f02709f4e72332f991e
+PODFILE CHECKSUM: d5145595ace6fbd35a4f7ba7c05ec42ac1d9a550
 
 COCOAPODS: 1.5.3
